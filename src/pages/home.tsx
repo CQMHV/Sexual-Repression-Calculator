@@ -136,7 +136,7 @@ export default function Home() {
               </Button>
               <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
                 <Link to="/https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
-                  <History className="w-4 h-4" />
+                  <Toolbox className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">其它工具</span>
                 </Link>
               </Button>
@@ -483,15 +483,6 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div>
-                <h4 className="font-semibold mb-3">支持</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#" className="hover:text-psychology-primary">常见问题</a></li>
-                  <li><a href="#" className="hover:text-psychology-primary">专业咨询</a></li>
-                  <li><a href="#" className="hover:text-psychology-primary">危机资源</a></li>
-                </ul>
-              </div>
-
               <div>
                 <h4 className="font-semibold mb-3">语言</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
