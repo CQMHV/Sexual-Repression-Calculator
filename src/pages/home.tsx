@@ -4,32 +4,32 @@
  */
 
 import React from 'react';
-import { 链接 } from 'react-router-dom';
-import { Card， CardContent， CardHeader， CardTitle } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Github } from "lucide-react";
 import { 
-  Brain， 
+  Brain, 
   Clock, 
-  Shield， 
-  用户， 
-  BarChart3， 
-  FileText， 
-  Heart，
-  Zap，
+  Shield, 
+  Users, 
+  BarChart3, 
+  FileText, 
+  Heart,
+  Zap,
   CheckCircle,
-  标星，
-  ArrowRight，
-  BookOpen，
-  Target，
-  History，
+  Star,
+  ArrowRight,
+  BookOpen,
+  Target,
+  History,
   Box
 } from 'lucide-react';
-import { 菜单 } from 'lucide-react'; // 添加菜单图标
+import { Menu } from 'lucide-react'; // 添加菜单图标
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
-export 默认 function 主页() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-psychology-calm via-white to-psychology-warm">
       {/* 背景装饰 */}
@@ -59,16 +59,16 @@ export 默认 function 主页() {
   <Sheet>
     <SheetTrigger asChild>
       <Button variant="ghost" size="sm">
-        <菜单 className="w-5 h-5" />
+        <Menu className="w-5 h-5" />
       </Button>
     </SheetTrigger>
     <SheetContent side="right">
       <div className="flex flex-col gap-4 mt-4">
         <Button variant="ghost" size="sm" asChild className="justify-start">
-          <链接 到="/guide" className="flex items-center gap-2">
+          <Link to="/guide" className="flex items-center gap-2">
             <BookOpen className="w-4 h-4" />
             使用指南
-          </链接>
+          </Link>
         </Button>
         <Button variant="ghost" size="sm" asChild className="justify-start">
           <Link to="/science" className="flex items-center gap-2">
@@ -94,10 +94,10 @@ export 默认 function 主页() {
           </a>
         </Button>
         <Button variant="ghost" size="sm" asChild className="justify-start">
-          <链接 到="https://tool.cqmhv.com/" className="flex items-center gap-2">
-            <History className="w-4 h-4" />
+          <Link to="https://tool.cqmhv.com/" className="flex items-center gap-2">
+            <Box className="w-4 h-4" />
             其它工具
-          </链接>
+          </Link>
         </Button>
       </div>
     </SheetContent>
@@ -116,13 +116,13 @@ export 默认 function 主页() {
                 <Link to="/science" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
                   <FileText className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">科学依据</span>
-                </链接>
+                </Link>
               </Button>
               <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
-                <链接 到="/history" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
+                <Link to="/history" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
                   <History className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">历史记录</span>
-                </链接>
+                </Link>
               </Button>
               {/* GitHub 链接 */}
               <Button variant="ghost" size="sm" asChild>
@@ -136,10 +136,10 @@ export 默认 function 主页() {
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
-                <链接 到="/https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
+                <Link to="/https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
                   <Box className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">其它工具</span>
-                </链接>
+                </Link>
               </Button>
             </div>
           </div>
@@ -479,7 +479,7 @@ export 默认 function 主页() {
                 <h4 className="font-semibold mb-3">资源</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><Link to="/guide" className="hover:text-psychology-primary">使用指南</Link></li>
-                  <li><Link to="/science" className="hover:text-psychology-primary">科学依据</Link></li>
+                  <li><链接 to="/science" className="hover:text-psychology-primary">科学依据</Link></li>
                   <li><a href="#" className="hover:text-psychology-primary">隐私政策</a></li>
                 </ul>
               </div>
