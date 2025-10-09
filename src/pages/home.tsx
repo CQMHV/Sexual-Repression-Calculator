@@ -83,7 +83,7 @@ export default function Home() {
         </Button>
         <Button variant="ghost" size="sm" asChild className="justify-start">
           <a 
-            href="https://github.com/lamos22/Sexual-Repression-Calculator" 
+            href="https://github.com/CQMHV/Sexual-Repression-Calculator" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2"
@@ -91,6 +91,12 @@ export default function Home() {
             <Github className="w-4 h-4" />
             GitHub仓库地址
           </a>
+        </Button>
+        <Button variant="ghost" size="sm" asChild className="justify-start">
+          <Link to="https://tool.cqmhv.com/" className="flex items-center gap-2">
+            <History className="w-4 h-4" />
+            其它工具
+          </Link>
         </Button>
       </div>
     </SheetContent>
@@ -118,16 +124,22 @@ export default function Home() {
                 </Link>
               </Button>
               {/* GitHub 链接 */}
-  <Button variant="ghost" size="sm" asChild>
-    <a 
-      href="https://github.com/lamos22/Sexual-Repression-Calculator" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="flex items-center"
-    >
-      <Github className="w-4 h-4" />
-    </a>
-  </Button>
+              <Button variant="ghost" size="sm" asChild>
+                <a 
+                  href="https://github.com/CQMHV/Sexual-Repression-Calculator" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <Github className="w-4 h-4" />
+                </a>
+              </Button>
+              <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
+                <Link to="/https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
+                  <History className="w-4 h-4" />
+                  <span className="text-[10px] sm:text-sm">其它工具</span>
+                </Link>
+              </Button>
             </div>
           </div>
         </nav>
@@ -477,6 +489,15 @@ export default function Home() {
                   <li><a href="#" className="hover:text-psychology-primary">常见问题</a></li>
                   <li><a href="#" className="hover:text-psychology-primary">专业咨询</a></li>
                   <li><a href="#" className="hover:text-psychology-primary">危机资源</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold mb-3">语言</h4>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li><a href="https://sri.cqmhv.com/" className="hover:text-psychology-primary">简体中文</a></li>
+                  <li><a href="https://srquiz.com/" className="hover:text-psychology-primary">英文</a></li>
+                  <li><a href="#" className="hover:text-psychology-primary">#</a></li>
                 </ul>
               </div>
             </div>
