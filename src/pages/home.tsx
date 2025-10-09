@@ -23,7 +23,8 @@ import {
   ArrowRight,
   BookOpen,
   Target,
-  History
+  History,
+  Toolbox
 } from 'lucide-react';
 import { Menu } from 'lucide-react'; // 添加菜单图标
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
