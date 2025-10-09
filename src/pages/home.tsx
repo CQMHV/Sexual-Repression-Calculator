@@ -4,32 +4,32 @@
  */
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { 链接 } from 'react-router-dom';
+import { Card， CardContent， CardHeader， CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Github } from "lucide-react";
 import { 
-  Brain, 
+  Brain， 
   Clock, 
-  Shield, 
-  Users, 
-  BarChart3, 
-  FileText, 
-  Heart,
-  Zap,
+  Shield， 
+  用户， 
+  BarChart3， 
+  FileText， 
+  Heart，
+  Zap，
   CheckCircle,
-  Star,
-  ArrowRight,
-  BookOpen,
-  Target,
-  History,
-  Toolbox
+  标星，
+  ArrowRight，
+  BookOpen，
+  Target，
+  History，
+  Box
 } from 'lucide-react';
-import { Menu } from 'lucide-react'; // 添加菜单图标
+import { 菜单 } from 'lucide-react'; // 添加菜单图标
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
-export default function Home() {
+export 默认 function 主页() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-psychology-calm via-white to-psychology-warm">
       {/* 背景装饰 */}
@@ -59,16 +59,16 @@ export default function Home() {
   <Sheet>
     <SheetTrigger asChild>
       <Button variant="ghost" size="sm">
-        <Menu className="w-5 h-5" />
+        <菜单 className="w-5 h-5" />
       </Button>
     </SheetTrigger>
     <SheetContent side="right">
       <div className="flex flex-col gap-4 mt-4">
         <Button variant="ghost" size="sm" asChild className="justify-start">
-          <Link to="/guide" className="flex items-center gap-2">
+          <链接 到="/guide" className="flex items-center gap-2">
             <BookOpen className="w-4 h-4" />
             使用指南
-          </Link>
+          </链接>
         </Button>
         <Button variant="ghost" size="sm" asChild className="justify-start">
           <Link to="/science" className="flex items-center gap-2">
@@ -94,10 +94,10 @@ export default function Home() {
           </a>
         </Button>
         <Button variant="ghost" size="sm" asChild className="justify-start">
-          <Link to="https://tool.cqmhv.com/" className="flex items-center gap-2">
+          <链接 到="https://tool.cqmhv.com/" className="flex items-center gap-2">
             <History className="w-4 h-4" />
             其它工具
-          </Link>
+          </链接>
         </Button>
       </div>
     </SheetContent>
@@ -116,13 +116,13 @@ export default function Home() {
                 <Link to="/science" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
                   <FileText className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">科学依据</span>
-                </Link>
+                </链接>
               </Button>
               <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
-                <Link to="/history" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
+                <链接 到="/history" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
                   <History className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">历史记录</span>
-                </Link>
+                </链接>
               </Button>
               {/* GitHub 链接 */}
               <Button variant="ghost" size="sm" asChild>
@@ -136,10 +136,10 @@ export default function Home() {
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
-                <Link to="/https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
-                  <Toolbox className="w-4 h-4" />
+                <链接 到="/https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
+                  <Box className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">其它工具</span>
-                </Link>
+                </链接>
               </Button>
             </div>
           </div>
