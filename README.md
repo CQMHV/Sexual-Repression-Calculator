@@ -1,4 +1,4 @@
-#源仓库地址：https://github.com/lamos22/Sexual-Repression-Calculator
+# 源仓库地址：https://github.com/lamos22/Sexual-Repression-Calculator
 
 # 性压抑指数计算器 (Sexual Repression Index Calculator)
 
