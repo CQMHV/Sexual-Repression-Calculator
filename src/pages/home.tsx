@@ -136,7 +136,7 @@ export default function Home() {
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
-                <Link to="/https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
+                <Link to="https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
                   <Box className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">其它工具</span>
                 </Link>
