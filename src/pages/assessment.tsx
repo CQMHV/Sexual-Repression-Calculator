@@ -1,3 +1,17 @@
+// 在页面组件的最上面引入
+import { Helmet } from 'react-helmet-async';
+
+export default function Assessment() {
+  return (
+    <>
+      <Helmet>
+        <title>开始测试 - 性压抑指数计算器</title>
+      </Helmet>
+      {/* 你的页面代码... */}
+    </>
+  );
+}
+
 /**
  * 评估页面 - 问卷系统主界面
  * 负责管理整个评估流程，包括知情同意、人口学信息、量表问卷等

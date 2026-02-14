@@ -1,5 +1,3 @@
-# 源仓库地址：https://github.com/lamos22/Sexual-Repression-Calculator
-
 # 性压抑指数计算器 (Sexual Repression Index Calculator)
 
 🧠 **基于科学研究的专业性心理健康评估工具**
@@ -87,12 +85,14 @@ docker run -p 8000:8000 appe233/sexual-repression-calculator
 ### 评估版本
 
 #### 🏃‍♂️ 快测版 (推荐)
+
 - **时长**: 8-15分钟
 - **题目**: 39题
 - **量表**: SIS/SES-SF(14) + Mosher性内疚(10) + KISS-9(9) + SOS筛查(5)
 - **适用**: 初次使用、快速了解
 
 #### 🎯 完整版
+
 - **时长**: 25-40分钟
 - **题目**: 117题
 - **量表**: 完整版SIS/SES(45) + 完整Mosher(28) + KISS-9(9) + 完整SOS(21) + BSAS(23)
@@ -101,12 +101,14 @@ docker run -p 8000:8000 appe233/sexual-repression-calculator
 ### 核心算法
 
 #### SRI指数计算
+
 ```
 SRI = Σ(标准化维度分数) → 0-100映射
 四维度: SOS反向 + 性内疚 + 性羞耻 + SIS优势
 ```
 
 #### 等级划分
+
 - 很低 (0-20): 较少压抑
 - 偏低 (20-40): 轻度压抑
 - 中等 (40-60): 中度压抑

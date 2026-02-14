@@ -94,10 +94,10 @@ export default function Home() {
           </a>
         </Button>
         <Button variant="ghost" size="sm" asChild className="justify-start">
-          <Link to="https://tool.cqmhv.com/" className="flex items-center gap-2">
+          <a href="https://tool.cqmhv.com/" className="flex items-center gap-2" target="_blank" rel="noopener noreferrer">
             <Box className="w-4 h-4" />
             其它工具
-          </Link>
+          </a>
         </Button>
       </div>
     </SheetContent>
@@ -136,10 +136,10 @@ export default function Home() {
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild className="h-auto py-1.5">
-                <Link to="https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2">
+                <a href="https://tool.cqmhv.com/" className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2" target="_blank" rel="noopener noreferrer">
                   <Box className="w-4 h-4" />
                   <span className="text-[10px] sm:text-sm">其它工具</span>
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
@@ -479,7 +479,7 @@ export default function Home() {
                 <h4 className="font-semibold mb-3">资源</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><Link to="/guide" className="hover:text-psychology-primary">使用指南</Link></li>
-                  <li><链接 to="/science" className="hover:text-psychology-primary">科学依据</Link></li>
+                  <li><Link to="/science" className="hover:text-psychology-primary">科学依据</Link></li>
                   <li><a href="#" className="hover:text-psychology-primary">隐私政策</a></li>
                 </ul>
               </div>
